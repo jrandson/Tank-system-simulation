@@ -3,11 +3,8 @@
 
 #include <QMainWindow>
 #include "qcustomplot.h"
-#include "quanser.h"
-#include "controller.h"
 #include "QTimer"
 #include "QThread"
-#include "dlgpid.h"
 #include "controladorpid.h"
 #include "tanque.h"
 
@@ -64,7 +61,6 @@ public:
 
 
     QCustomPlot *customPlot;
-    Controller *controller;
 
 
     QTimer *timerEscrita;

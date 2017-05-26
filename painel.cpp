@@ -102,7 +102,7 @@ void Painel::lerDadosPlanta()
 {
     // calculate two new data points:
     double key = QDateTime::currentDateTime().toMSecsSinceEpoch()/1000.0;
-    static double lastPointKey = 0;
+
 
     // ler o sinal do servidor aqui
 
@@ -146,9 +146,7 @@ void Painel::resetaPlanta()
 
 void Painel::enviaDadosPlanta()
 {
-    // calculate two new data points:
-    double key = QDateTime::currentDateTime().toMSecsSinceEpoch()/1000.0;
-    static double lastPointKey = 0;
+
 
     this->sinal = this->getSinalControle();
 
