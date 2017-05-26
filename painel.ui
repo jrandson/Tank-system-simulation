@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Painel</class>
+ <widget class="QMainWindow" name="Painel">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1291</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistema de monitoramento</string>
+  </property>
+  <property name="windowOpacity">
+   <double>2.000000000000000</double>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonFollowStyle</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Iniciar</string>
+    </property>
+   </widget>
+   <widget class="QCustomPlot" name="wdgPlotNivel" native="true">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>10</y>
+      <width>931</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="pbTanque1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>141</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255,255,255);</string>
+    </property>
+    <property name="value">
+     <number>12</number>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lnEdtNivelTq1">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>580</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>560</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nivel do tanque 1 (Cm)</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="pbTanque2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>190</y>
+      <width>150</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lnEdtNivelTq2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>580</y>
+      <width>113</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>560</y>
+      <width>151</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nível do tanque 2 (Cm)</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>310</y>
+      <width>221</width>
+      <height>240</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Tanque 1</string>
+    </property>
+    <widget class="QCheckBox" name="checkBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>171</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bomba Ligada</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sinal de tensão na bomba</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hs_torneira_tq1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>30</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vazão de saída: 0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_tensao_bomba">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>59</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_torneira_tq1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Torneira: 30.0%</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hs_sinal_bomba">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>99</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Torneira Tanque 1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>310</y>
+      <width>231</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Tanque 2</string>
+    </property>
+    <widget class="QLabel" name="lb_torneira_tq2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Torneira: 75.0%</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="hs_torneira_tq2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>75</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Torneira Tanque 2</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_vazao_tq2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>59</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>59</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tanque 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>170</y>
+      <width>59</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tanque 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neste sistema, a água escoa do tanque 1 
+para o tanque 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A bomba enche o tanque 1</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1291</width>
+     <height>19</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
